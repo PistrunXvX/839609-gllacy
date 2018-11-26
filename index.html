@@ -23,10 +23,25 @@
 				<li><a href="#">О компании</a></li>
 			</ul>
 		</nav>
-		<ul>
-			<li><button class="btn btn-search">Поиск</button></li>
-			<li><button class="btn btn-enter">Вход</button></li>
-			<li><button class="btn btn-basket">Пусто</button></li>
+		<ul class="user-navigation">
+			<li><a href="#" class="btn btn-search">Поиск</a></li>
+			<li><a href="#" class="btn btn-enter">Вход</a>
+
+        <div class="pop-up-enter">
+          <h2 class="visibilty-hidden">Войти в профиль или зарегистрироваться</h2>
+          <form action="" method="post">
+            <input type="text" placeholder="Электронная почта">
+            <input type="password" placeholder="Пароль">
+            <button type="submit">Войти</button>
+            <ul>
+              <li><a href="#">Забыли пароль?</a></li>
+              <li><a href="#">Новая регистрация</a></li>
+            </ul>
+          </form>
+        </div>
+
+      </li>
+			<li><a href="#" class="btn btn-basket">Пусто</a></li>
 		</ul>
 		<!-- контактные данные --->
 	</header>
@@ -58,28 +73,28 @@
 						<a href="#">
 							Сливочное с апельсиновым джемом и цитрусовой стружкой
 						</a>
-						310 Р <span class="kg">/кг</span>
+						<p>310 Р <span class="kg">/кг</span></p>
 				</li>
 				<li>
 					<img src="img/catalog/products-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
 						<a href="#">
 							Сливочно-кофейное с кусочками шоколада
 						</a>
-						380 Р <span class="kg">/кг</span>
+						<p>380 Р <span class="kg">/кг</span></p>
 				</li>
 				<li>
 					<img src="img/catalog/products-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 						<a href="#">
 							Сливочно-клубничное с присыпкой из белого шоколада
 						</a>
-						355 Р <span class="kg">/кг</span>
+						<p>355 Р <span class="kg">/кг</span></p>
 				</li>
 				<li>
 					<img src="img/catalog/products-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
 						<a href="#">
 							Сливочное крем-брюле с карамельной подливкой
 						</a>
-						415 Р <span class="kg">/кг</span>
+						<p>415 Р <span class="kg">/кг</span></p>
 				</li>
 			</ul>
 		</section>
@@ -156,18 +171,7 @@
 		</section>
 	</footer>
 
-  <div class="pop-up-enter">
-    <h2 class="visibilty-hidden">Войти в профиль или зарегистрироваться</h2>
-    <form action="" method="get">
-      <input type="text" placeholder="Электронная почта">
-      <input type="password" placeholder="Пароль">
-      <button>Войти</button>
-      <ul>
-        <li><a href="#">Забыли пароль?</a></li>
-        <li><a href="#">Новая регистрация</a></li>
-      </ul>
-    </form>
-  </div>
+
 
   <div class="pop-up-find">
     <h2 class="visibilty-hidden">Поиск по сайту</h2>
@@ -176,13 +180,13 @@
 
   <div class="pop-up-feedback">
     <h2 class="visibility-hidden">Отправка формы заявки</h2>
-    <form action="#" method="get">
+    <form action="#" method="post">
       <input type="text" placeholder="Как вас зовут?">
       <input type="text" placeholder="Ваша почта для ответа?">
      <textarea name="#" id="#" cols="30" rows="10" placeholder="Напишите что-нибудь...">
 
      </textarea>
-     <button>Отправить</button>
+     <button type="submit">Отправить</button>
     </form>
   </div>
 </body>
