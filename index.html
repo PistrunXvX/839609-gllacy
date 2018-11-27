@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>"Глейси" мороженное</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -24,10 +27,10 @@
 			</ul>
 		</nav>
 		<ul class="user-navigation">
-			<li><a href="#" class="btn btn-search">Поиск</a></li>
-			<li><a href="#" class="btn btn-enter">Вход</a>
+			<li><a href="#" class="btn-search">Поиск</a></li>
+			<li><a href="#" class="btn-enter">Вход</a>
 
-        <div class="pop-up-enter">
+        <div class="pop-up enter">
           <h2 class="visibilty-hidden">Войти в профиль или зарегистрироваться</h2>
           <form action="" method="post">
             <input type="text" placeholder="Электронная почта">
@@ -41,15 +44,26 @@
         </div>
 
       </li>
-			<li><a href="#" class="btn btn-basket">Пусто</a></li>
+			<li><a href="#" class="btn-basket">Пусто</a></li>
 		</ul>
-		<!-- контактные данные --->
+    <p class="contacts-time">
+      <span>С 10 до 20, ежедневно<br></span>
+      <span>8 812 450-25-25</span>
+    </p>
 	</header>
 	<main>
+    <div class="slider">
+      <ul class="slider-navigation">
+        <li><button>Первый слайд</button></li>
+        <li><button>Второй слайд</button></li>
+        <li><button>Третий слайд</button></li>
+      </ul>
+    </div>
 		<h1 class="visibility-hidden">Магазин мороженного Глейси</h1>
 		<!-- Добавить ссылку и текст --->
+
 		<section class="news">
-			<h2 class="visiblity-hidden">Новости</h2>
+			<h2 class="visibility-hidden">Новости</h2>
 		<section class="news-1">
 			<h3>Малинка даром</h3>
 			<p>
@@ -66,41 +80,41 @@
 		</section>
 		</section>
 		<section class="catalog">
-			<h2 class="visibility-hiddden">Каталог</h2>
+			<h2 class="visibility-hidden">Каталог</h2>
 			<ul class="catalog-list">
 				<li>
 					<img src="img/catalog/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
 						<a href="#">
 							Сливочное с апельсиновым джемом и цитрусовой стружкой
 						</a>
-						<p>310 Р <span class="kg">/кг</span></p>
+						<p><span class="sale">310 ₽</span> <span class="kg">/кг</span></p>
 				</li>
 				<li>
 					<img src="img/catalog/products-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
 						<a href="#">
 							Сливочно-кофейное с кусочками шоколада
 						</a>
-						<p>380 Р <span class="kg">/кг</span></p>
+						<p><span class="sale">380 ₽</span> <span class="kg">/кг</span></p>
 				</li>
 				<li>
 					<img src="img/catalog/products-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 						<a href="#">
 							Сливочно-клубничное с присыпкой из белого шоколада
 						</a>
-						<p>355 Р <span class="kg">/кг</span></p>
+						<p><span class="sale">355 ₽</span><span class="kg">/кг</span></p>
 				</li>
 				<li>
 					<img src="img/catalog/products-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
 						<a href="#">
 							Сливочное крем-брюле с карамельной подливкой
 						</a>
-						<p>415 Р <span class="kg">/кг</span></p>
+						<p><span class="sale">415 ₽</span> <span class="kg">/кг</span></p>
 				</li>
 			</ul>
 		</section>
 		<section class="about">
 			<h2 class="visibility-hidden">О нас</h2>
-			<b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+			<p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес </p>
 			<ul class="about-list">
 				<li class="about-1">
 					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
@@ -121,7 +135,7 @@
 			<span class="new-blog">Новое в нашем блоге</span>
 			<a href="#">
 			<p>
-				10 способов сервировки  фруктовых щербетов к столу
+				10 способов сервировки  фруктовых щербетов к  столу
 			</p>
 			</a>
 		</article>
@@ -130,24 +144,26 @@
 			<p>
 				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
 			</p>
-			<!-- Добавить форму отправки --->
-
-
-			<button class="btn sub-btn">Отправить</button>
+			<form action="" method="post">
+        <input type="email" placeholder="Электронная почта">
+        <button type="submit" class="btn">Отправить</button>
+      </form>
 		</section>
 		<section class="feedback">
 			<h2 class="visibility-hidden">Форма обратной связи</h2>
-			<p class="addres">
-				Адрес главного офиса <br>
-				 и офлайн-магазина: <br>
-				 <strong>ул. Большая Конюшенная 19/8,<br>
+      <div class="bg-feed">
+			 <p class="addres">
+				  Адрес главного офиса <br>
+				  и офлайн-магазина: <br>
+				  <strong>ул. Большая Конюшенная 19/8,<br>
 				  Санкт-Петербург</strong>
-			</p>
-			<p class="phone-number">
-				Для заказов по телефону:<br>
-				<strong>8 812 450-25-25 <br>
-				(с 10 до 20 ежедневно)</strong>
-			</p>
+			 </p>
+			 <p class="phone-number">
+				  Для заказов по телефону:<br>
+				  <strong>8 812 450-25-25 </strong><br>
+				  <span>(с 10 до 20 ежедневно)</span>
+			 </p>
+      </div>
 		</section>
 	</main>
 	<footer>
@@ -166,19 +182,19 @@
 			<a href="#">Экологические стандарты</a>
 		</section>
 		<section class="second-info">
-			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="HTML Academy"></a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/index/logo-htmlacademy-small.svg" alt="HTML Academy" width="108" height="39"></a>
 			<span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
 		</section>
 	</footer>
 
 
 
-  <div class="pop-up-find">
+  <div class="pop-up find">
     <h2 class="visibilty-hidden">Поиск по сайту</h2>
     <input type="search" placeholder="Поиск">
   </div>
 
-  <div class="pop-up-feedback">
+  <div class="pop-up feedback">
     <h2 class="visibility-hidden">Отправка формы заявки</h2>
     <form action="#" method="post">
       <input type="text" placeholder="Как вас зовут?">

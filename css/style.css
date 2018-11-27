@@ -1,0 +1,286 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #fff;
+
+  background-color: #849d8f;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.visibility-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.btn {
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  color: white;
+}
+
+/* pop-up */
+
+.pop-up {
+  display: none;
+}
+
+.under-item {
+  display: none;
+}
+
+/* header */
+
+ nav a{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+ }
+
+
+ .navigation-header a:hover {
+  color: #333333;
+
+  background-color: #f7f6f3;
+ }
+
+ .user-navigation a{
+  font-weight: medium;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+
+  background-color: rgba(255,255,255, 0.2);
+ }
+
+  .user-navigation a:hover {
+  color: #333333;
+
+  background-color: #f7f6f3;
+ }
+
+   .breadcrumbs a:hover,
+  .second-navigation a:hover {
+    color: #e84d37;
+  }
+
+ .contacts-time span:nth-child(1) {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #fff;
+ }
+
+ .contacts-time span:nth-child(2) {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #fff;
+ }
+
+ /* main */
+ /* news */
+
+ .news .news-1 {
+    background: url("../img/index/bg-1.png") no-repeat;
+ }
+
+ .news .news-2 {
+  background: url("../img/index/bg-2.png") no-repeat;
+ }
+
+ .news h3 {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 41px;
+    color: #fff;
+ }
+
+ .news p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+ }
+
+ .btn-news {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+ }
+
+ /* catalog */
+
+ .catalog a {
+    font-weight: medium;
+    color: #fff;
+ }
+
+ .catalog-list .sale {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #fff;
+ }
+
+ .catalog-list .kg {
+  font-size: 30px;
+  line-height: 45px;
+  color: #fff;
+ }
+
+ /* about */
+
+.about {
+  color: #323232;
+
+  background: url("../img/index/background-feature.png") no-repeat;
+}
+
+.about p {
+  font-size: 24px;
+  font-weight: medium;
+  line-height: 30px;
+}
+
+.about-1 {
+  background: url("../img/index/about-icon-1.svg") no-repeat;
+}
+
+.about-2 {
+  background: url("../img/index/about-icon-2.svg") no-repeat;
+}
+
+.about-3 {
+  background: url("../img/index/about-icon-3.svg") no-repeat;
+}
+
+.about-4 {
+  background: url("../img/index/about-icon-4.svg") no-repeat;
+}
+
+/* blog */
+
+.blog {
+  color: #323232;
+
+  background: url("../img/index/background-blog.png") no-repeat;
+}
+
+.new-blog {
+  font-weight: medium;
+}
+
+.blog a {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+
+  text-decoration: underline;
+}
+
+/* sub-mail */
+
+.sub-mail {
+  background-color: #f8f7f4;
+}
+
+.sub-mail p {
+  color: #5a5a5a;
+}
+
+/* feedback */
+
+.feedback {
+  color: #323232;
+
+  background: url("../img/index/map.jpg") no-repeat;
+}
+
+.addres {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.addres strong {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.phone-number {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.phone-number strong {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.phone-number span {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+/* footer */
+/* social */
+
+.social-list li:nth-child(1) {
+  background: url("../img/index/tw-icon.svg") no-repeat;
+}
+
+.social-list li:nth-child(2) {
+  background: url("../img/index/ints-icon.svg") no-repeat;
+}
+
+.social-list li:nth-child(3) {
+  background: url("../img/index/facebook-icon.svg") no-repeat;
+}
+
+.social-list li:nth-child(4) {
+  background: url("../img/index/vk-icon.svg") no-repeat;
+}
+
+
+/* info */
+
+.info {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.info a:nth-child(1) {
+  font-weight: bold;
+}
+
+/* second-info */
+
+.second-info span {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+/* catalog.html */
+
+
+
+
+
+
