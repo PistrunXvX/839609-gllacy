@@ -44,7 +44,7 @@ a {
 
  nav a{
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 18px;
   color: #fff;
  }
@@ -145,7 +145,8 @@ a {
 .about {
   color: #323232;
 
-  background: url("../img/index/background-feature.png") no-repeat;
+  background: url("../img/index/background-feature.png");
+  background-size: cover;
 }
 
 .about p {
@@ -206,7 +207,12 @@ a {
 .feedback {
   color: #323232;
 
-  background: url("../img/index/map.jpg") no-repeat;
+  background-color: white;
+}
+
+.cart-wrapper {
+  background: url("../img/index/map.jpg");
+  background-size: cover;
 }
 
 .addres {
@@ -277,7 +283,122 @@ a {
   font-weight: normal;
 }
 
+/* index.html */
+
+/*header*/
+
+.container {
+  margin-left: 27px;
+  margin-right: 27px;
+}
+
+.main-header {
+  display: flex;
+  margin-top: 10px;
+}
+
+.main-header .logo {
+  width: 155px;
+  height: 65px;
+}
+
+.navigation-header {
+  width: 390px;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-wrapper li {
+  display: inline;
+}
+.wrapper-main {
+  width: 293px;
+}
+.wrapper-main li {
+  display: inline;
+}
+
+.slider {
+  width: 1146px;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-1,
+.news-2 {
+  width: 560px;
+}
+
+.catalog {
+
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 76px;
+}
+
+.catalog-list li {
+  width: 267px;
+}
+
+.about ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.about-wrapper {
+  width: 560px;
+}
+
+.two-wrapper {
+    display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  }
+
+.two-wrapper article,
+.two-wrapper section{
+  width: 560px;
+}
+
+.feedback {
+
+}
+
+.cart-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+
+  height: 430px;
+  margin-top: 40px;
+  margin-left: -27px;
+  margin-right: -27px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* catalog.html */
+
+.second-navigation li {
+  display: inline;
+}
+
 
 
 
