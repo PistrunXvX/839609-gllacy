@@ -8,14 +8,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
+<input class="visibility-hidden" type="radio" id="product-1" name="toggle" checked>
+<input class="visibility-hidden" type="radio" id="product-2" name="toggle">
+<input class="visibility-hidden" type="radio" id="product-3" name="toggle">
+<div class="site-wrapper">
+  <div class="container">
 	<header class="main-header">
     <a><img src="img/index/logo.svg" alt="Логотип компании" class="logo"></a>
 		<nav class="navigation-header">
       <div class="nav-wrapper">
 			<ul>
 				<li>
-					<a href="#">Каталог</a>
+					<a href="#" class="current-item">Каталог</a>
 					<ul class="under-item">
 						<li><a href="#">Новинки</a></li>
 						<li><a href="catalog.html">Сливочное</a></li>
@@ -31,11 +35,22 @@
 		</nav>
     <div class="wrapper-main">
 		<ul class="user-navigation">
-			<li><a href="#" class="btn-search">Поиск</a></li>
-			<li><a href="#" class="btn-enter">Вход</a>
+			<li><a href="#" class="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+          <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"></path>
+        </svg>
+        <span class="visibility-hidden">Поиск</span></a></li>
+			<li><a href="#" class="btn-enter">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+          <g fill="#FFF">
+            <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+            <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+          </g>
+        </svg>
+        <span >Вход</span></a>
 
         <div class="pop-up enter">
-          <h2 class="visibilty-hidden">Войти в профиль или зарегистрироваться</h2>
+          <h2 class="visibility-hidden">Войти в профиль или зарегистрироваться</h2>
           <form action="" method="post">
             <input type="text" placeholder="Электронная почта">
             <input type="password" placeholder="Пароль">
@@ -48,21 +63,51 @@
         </div>
 
       </li>
-			<li><a href="#" class="btn-basket">Пусто</a></li>
+      <li><a href="#" class="btn-basket">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+          <g fill="#FFF">
+            <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+            <circle cx="6.984" cy="18" r="2"/>
+            <circle cx="15.984" cy="18" r="2"/>
+          </g>
+        </svg>
+        <span>Пусто</span></a></li>
 		</ul>
     </div>
+    <div class="contacts-wrapper">
     <p class="contacts-time">
       <span>С 10 до 20, ежедневно<br></span>
       <span>8 812 450-25-25</span>
     </p>
+    </div>
 	</header>
 	<main>
     <div class="slider">
-      <ul class="slider-navigation">
-        <li><button>Первый слайд</button></li>
-        <li><button>Второй слайд</button></li>
-        <li><button>Третий слайд</button></li>
-      </ul>
+      <div class="slider-controls">
+        <label for="product-1">Первый</label>
+        <label for="product-2">Второй</label>
+        <label for="product-3">Третий</label>
+      </div>
+      <ul class="slider-list">
+          <li class="slider-item slide" id="slide1">
+            <h3 class="slide-title">
+              Крем-брюле и пломбир с малиновым джемом
+            </h3>
+            <a class="btn slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide2">
+            <h3 class="slide-title">
+              Шоколадный пломбир и лимонный сорбет
+            </h3>
+            <a class="btn slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide3">
+            <h3 class="slide-title">
+              Пломбир с помадкой и клубничный щербет
+            </h3>
+            <a class="btn slide-button" href="#">Давайте оба!</a>
+          </li>
+        </ul>
     </div>
 		<h1 class="visibility-hidden">Магазин мороженного Глейси</h1>
 		<!-- Добавить ссылку и текст --->
@@ -70,50 +115,62 @@
 		<section class="news">
 			<h2 class="visibility-hidden">Новости</h2>
 		<section class="news-1">
-			<h3>Малинка даром</h3>
+			<h3>Малинка даром!</h3>
 			<p>
 				При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно. 
-			</p>
+			</p >
+      <div class="news-btn-wrapper">
 			<a href="#" class="btn btn-news">Хочу варенье!</a>
+      </div>
 		</section>
 		<section class="news-2">
-			<h3>Шоколадки даром</h3>
+			<h3>Шоколадки даром!</h3>
 			<p>
 				При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно. 
 			</p>
+      <div class="news-btn-wrapper">
 			<a href="#" class="btn btn-news">Хочу шоколадки!</a>
+      </div>
 		</section>
 		</section>
 		<section class="catalog">
 			<h2 class="visibility-hidden">Каталог</h2>
 			<ul class="catalog-list">
 				<li>
-					<img src="img/catalog/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
+					<img src="img/catalog/product-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
+          <p class="catalog-wrapper">
 						<a href="#">
 							Сливочное с апельсиновым джемом и цитрусовой стружкой
 						</a>
-						<p><span class="sale">310 ₽</span> <span class="kg">/кг</span></p>
+          </p>
+						<p class="second-info-catalog"><span class="sale">310 ₽</span> <span class="kg">/кг</span></p>
 				</li>
 				<li>
-					<img src="img/catalog/products-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+					<img src="img/catalog/product-2.png" alt="Сливочно-кофейное с кусочками шоколада">
+          <p class="catalog-wrapper">
 						<a href="#">
 							Сливочно-кофейное с кусочками шоколада
 						</a>
-						<p><span class="sale">380 ₽</span> <span class="kg">/кг</span></p>
+          </p>
+						<p class="second-info-catalog"><span class="sale">380 ₽</span> <span class="kg">/кг</span></p>
 				</li>
 				<li>
-					<img src="img/catalog/products-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					<img src="img/catalog/product-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <p class="catalog-wrapper">
 						<a href="#">
 							Сливочно-клубничное с присыпкой из белого шоколада
 						</a>
-						<p><span class="sale">355 ₽</span><span class="kg">/кг</span></p>
+          </p>
+						<p class="second-info-catalog"><span class="sale">355 ₽</span><span class="kg">/кг</span></p>
 				</li>
 				<li>
-					<img src="img/catalog/products-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+					<img src="img/catalog/product-4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+          <p class="catalog-wrapper">
 						<a href="#">
 							Сливочное крем-брюле с карамельной подливкой
 						</a>
-						<p><span class="sale">415 ₽</span> <span class="kg">/кг</span></p>
+          </p>
+						<p class="second-info-catalog"><span class="sale">415 ₽</span> <span class="kg">/кг</span></p>
 				</li>
 			</ul>
 		</section>
@@ -123,7 +180,9 @@
 			<ul class="about-list">
         <div class="about-wrapper">
 				<li class="about-1">
+          <div class="about-list-wrapper">
 					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+          </div>
 				</li>
 				<li class="about-2">
 					Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
@@ -178,7 +237,6 @@
       </div>
 		</section>
 	</main>
-</div>
 <footer>
 		<section class="social">
 			<ul class="social-list">
@@ -199,6 +257,9 @@
 			<span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
 		</section>
 	</footer>
+  </div>
+</div>
+
 
 
 
