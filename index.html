@@ -14,12 +14,12 @@
 <div class="site-wrapper">
   <div class="container">
 	<header class="main-header">
-    <a><img src="img/index/logo.svg" alt="Логотип компании" class="logo"></a>
+    <a><img src="img/index/logo.svg" alt="Логотип компании" class="logo" width="154" height="64"></a>
 		<nav class="navigation-header">
       <div class="nav-wrapper">
 			<ul>
 				<li>
-					<a href="#" class="current-item">Каталог</a>
+					<a href="#">Каталог</a>
 					<ul class="under-item">
 						<li><a href="#">Новинки</a></li>
 						<li><a href="catalog.html">Сливочное</a></li>
@@ -39,7 +39,12 @@
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
           <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"></path>
         </svg>
-        <span class="visibility-hidden">Поиск</span></a></li>
+        <span class="visibility-hidden">Поиск</span></a>
+        <div class="pop-up find">
+          <h2 class="visibility-hidden">Поиск по сайту</h2>
+          <input type="search" placeholder="Что ищем?">
+        </div>
+      </li>
 			<li><a href="#" class="btn-enter">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
           <g fill="#FFF">
@@ -51,10 +56,10 @@
 
         <div class="pop-up enter">
           <h2 class="visibility-hidden">Войти в профиль или зарегистрироваться</h2>
-          <form action="" method="post">
+          <form action="#" method="post">
             <input type="text" placeholder="Электронная почта">
             <input type="password" placeholder="Пароль">
-            <button type="submit">Войти</button>
+            <button type="submit" class="btn">Войти</button>
             <ul>
               <li><a href="#">Забыли пароль?</a></li>
               <li><a href="#">Новая регистрация</a></li>
@@ -137,7 +142,7 @@
 			<h2 class="visibility-hidden">Каталог</h2>
 			<ul class="catalog-list">
 				<li>
-					<img src="img/catalog/product-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
+					<img src="img/catalog/product-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой " width="267" height="267">
           <p class="catalog-wrapper">
 						<a href="#">
 							Сливочное с апельсиновым джемом и цитрусовой стружкой
@@ -146,7 +151,7 @@
 						<p class="second-info-catalog"><span class="sale">310 ₽</span> <span class="kg">/кг</span></p>
 				</li>
 				<li>
-					<img src="img/catalog/product-2.png" alt="Сливочно-кофейное с кусочками шоколада">
+					<img src="img/catalog/product-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           <p class="catalog-wrapper">
 						<a href="#">
 							Сливочно-кофейное с кусочками шоколада
@@ -155,7 +160,7 @@
 						<p class="second-info-catalog"><span class="sale">380 ₽</span> <span class="kg">/кг</span></p>
 				</li>
 				<li>
-					<img src="img/catalog/product-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					<img src="img/catalog/product-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           <p class="catalog-wrapper">
 						<a href="#">
 							Сливочно-клубничное с присыпкой из белого шоколада
@@ -164,7 +169,7 @@
 						<p class="second-info-catalog"><span class="sale">355 ₽</span><span class="kg">/кг</span></p>
 				</li>
 				<li>
-					<img src="img/catalog/product-4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+					<img src="img/catalog/product-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           <p class="catalog-wrapper">
 						<a href="#">
 							Сливочное крем-брюле с карамельной подливкой
@@ -180,9 +185,7 @@
 			<ul class="about-list">
         <div class="about-wrapper">
 				<li class="about-1">
-          <div class="about-list-wrapper">
 					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-          </div>
 				</li>
 				<li class="about-2">
 					Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
@@ -213,7 +216,7 @@
 			<p>
 				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
 			</p>
-			<form action="" method="post">
+			<form action="#" method="post">
         <input type="email" placeholder="Электронная почта">
         <button type="submit" class="btn btn-news">Отправить</button>
       </form>
@@ -291,7 +294,6 @@
               <li><a href="#">Экологические стандарты</a></li>
             </ul>
           </div>
-         </ul>
 
 
 		</section>
@@ -306,20 +308,18 @@
 
 
 
-  <div class="pop-up find">
-    <h2 class="visibility-hidden">Поиск по сайту</h2>
-    <input type="search" placeholder="Поиск">
-  </div>
+
 
   <div class="pop-up feedback">
     <h2 class="visibility-hidden">Отправка формы заявки</h2>
+    <p>Мы обязательно вам ответим!</p>
     <form action="#" method="post">
       <input type="text" placeholder="Как вас зовут?">
       <input type="text" placeholder="Ваша почта для ответа?">
-     <textarea name="#" id="#" cols="30" rows="10" placeholder="Напишите что-нибудь...">
-
+     <textarea name="#" id="#"  placeholder="Напишите что-нибудь...">
+        Напишите что-нибудь...
      </textarea>
-     <button type="submit">Отправить</button>
+     <input type="submit" class="btn">
     </form>
   </div>
 </body>
