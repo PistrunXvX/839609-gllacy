@@ -15,7 +15,7 @@
       <div class="nav-wrapper">
         <ul>
           <li>
-            <a href="#" class="under-item-btn">Каталог</a>
+            <a class="under-item-btn current-item">Каталог</a>
             <div class="under-item-wrapper pop-up">
               <ul class="under-item">
                 <li class="top-item"><a href="#">Новинки</a></li>
@@ -31,6 +31,7 @@
         </ul>
       </div>
     </nav>
+    <div class="wrapper-main">
     <ul class="user-navigation">
       <li><a href="#" class="btn-search btn-search-js">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
@@ -65,13 +66,12 @@
         </div>
 
       </li>
-		  <li><a href="#" class="btn-basket">
+		  <li><a href="#" class="btn-basket current">
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-          <g fill="#FFF">
-            <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
-            <circle cx="6.984" cy="18" r="2"/>
-            <circle cx="15.984" cy="18" r="2"/>
-          </g>
+          <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
+          <circle cx="6.984" cy="18" r="2" fill="#343434"/>
+          <circle cx="15.984" cy="18" r="2" fill="#343434"/>
+          <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
         </svg>
         <span>2 товара</span></a>
         <div class="pop-up basket">
@@ -93,21 +93,57 @@
         </div>
       </li>
     </ul>
+    </div>
+    <div class="contacts-wrapper catalog">
     <p class="contacts-time">
       <span class="time-work">С 10 до 20, ежедневно<br></span>
       <span class="number-work">8 812 450-25-25</span>
     </p>
+    </div>
 	</header>
 	<main>
 		<nav class="breadcrumbs">
 			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="#">Каталог</a></li>
+				<li><a href="index.html">Главная</a>&nbsp;&nbsp;&raquo;</li>
+				<li><a href="#">Каталог</a>&nbsp;&nbsp;&raquo;</li>
 				<li><a class="current-item-breadcrumbs">Сливочное</a></li>
 			</ul>
 			<h1>Сливочное мороженное</h1>
 		</nav>
 		<!-- Добавить форму поиска --->
+    <div class="form-basket">
+      <form>
+        <div class="form-basket-wrapper 1">
+          <p><label for="form-sort">Сортировка</label></p>
+          <select id="form-sort">
+            <option value="">по популярности</option>
+            <option value="">сначала недорогие</option>
+            <option value="">сначала дорогие</option>
+            <option value="">по жирности</option>
+          </select>
+        </div>
+        <div class="form-basket-wrapper 2">
+          <p><label for="range-basket">Цена: 100 руб. – 500 руб.</label></p>
+          <input type="range" id="range-basket">
+        </div>
+        <div class="form-basket-wrapper 3">
+          <p><label>Жирность:</label></p>
+          <p><input type="radio">0%</p>
+          <p><input type="radio">до 10%</p>
+          <p><input type="radio">до 30%</p>
+          <p><input type="radio">выше 30%</p>
+        </div>
+        <div class="form-basket-wrapper 4">
+          <p><label>Наполнители:</label></p>
+          <p><input type="checkbox">шоколадные</p>
+          <p><input type="checkbox">сахарные присыпки</p>
+          <p><input type="checkbox">фрукты</p>
+          <p><input type="checkbox">сиропы</p>
+          <p><input type="checkbox">джемы</p>
+          <button type="submit">Применить</button>
+        </div>
+      </form>
+    </div>
 
 
 		<section class="catalog">
@@ -236,13 +272,15 @@
 			</ul>
 		</section>
 		<section class="second-navigation">
+      <div class="wrapper">
 			<ul class="second-list">
-				<li><a class="current-item-second">1</a></li>
+        <li><a class="current-item-second">1</a></li>
 				<li><a href="#">2</a></li>
 				<li><a href="#">3</a></li>
 				<li><a href="#">4</a></li>
 				<li><a href="#">5</a></li>
 			</ul>
+      </div>
 		</section>
 	</main>
   <footer>

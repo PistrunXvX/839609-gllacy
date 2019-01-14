@@ -977,8 +977,15 @@ nav a{
 }
 
 .contacts-wrapper {
-  display: flex;
-  flex-direction: row-reverse;
+ position: relative;
+  top: 60%;
+  left: 86%;
+}
+
+.contacts-wrapper.catalog{
+  position: absolute;
+  top: 65%;
+  left: 86%;
 }
 
 .news {
@@ -1201,3 +1208,101 @@ footer {
 .catalog-bg {
   background-color: rgb(132 157 143);
 }
+
+.current-item {
+  background-color: #D07058;
+}
+
+.navigation-header .current-item:hover {
+  background-color: #D07058;
+  color: white;
+}
+
+.btn-basket.current {
+  background-color: white;
+  color: black;
+}
+
+.user-navigation .btn-basket.current:hover path:first-child {
+  fill: #E84D37;
+}
+
+.user-navigation .btn-basket.current:hover {
+  background-color: white;
+}
+
+.breadcrumbs {
+  margin-top: 24px;
+}
+
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  display: inline;
+
+  padding-right: 5px;
+}
+
+.breadcrumbs a {
+  font-weight: normal;
+}
+
+.breadcrumbs a {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current-item-breadcrumbs {
+  text-decoration: none;
+}
+
+.second-navigation {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: 20px;
+  margin-bottom: 36px;
+}
+
+.second-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.second-navigation li {
+  margin: 0;
+  padding: 0;
+
+}
+.second-list a {
+  padding: 5px 10px;
+}
+
+.second-list a:hover {
+  color: black;
+
+  border-radius: 60px;
+  background-color: white;
+}
+
+/* form catalog */
+
+.form-basket {
+  width: 700px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
