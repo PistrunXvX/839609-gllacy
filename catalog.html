@@ -5,7 +5,7 @@
 	<title>"Глейси" каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min.style.css">
 </head>
 <body class="catalog-bg">
 <div class="container">
@@ -113,7 +113,7 @@
 		<!-- Добавить форму поиска --->
     <div class="form-basket">
       <form>
-        <div class="form-basket-wrapper 1">
+        <div class="form-basket-wrapper -w1">
           <p><label for="form-sort">Сортировка</label></p>
           <select id="form-sort">
             <option value="">по популярности</option>
@@ -122,24 +122,30 @@
             <option value="">по жирности</option>
           </select>
         </div>
-        <div class="form-basket-wrapper 2">
+        <div class="form-basket-wrapper -w2">
           <p><label for="range-basket">Цена: 100 руб. – 500 руб.</label></p>
           <input type="range" id="range-basket">
         </div>
-        <div class="form-basket-wrapper 3">
+        <div class="form-basket-wrapper -w3">
           <p><label>Жирность:</label></p>
-          <p><input type="radio">0%</p>
-          <p><input type="radio">до 10%</p>
-          <p><input type="radio">до 30%</p>
-          <p><input type="radio">выше 30%</p>
+          <ul>
+            <li><p><input type="radio">0%</p></li>
+            <li><p><input type="radio">до 10%</p></li>
+            <li><p><input type="radio">до 30%</p></li>
+            <li><p><input type="radio">выше 30%</p></li>
+          </ul>
         </div>
-        <div class="form-basket-wrapper 4">
+        <div class="form-basket-wrapper -w4">
           <p><label>Наполнители:</label></p>
-          <p><input type="checkbox">шоколадные</p>
-          <p><input type="checkbox">сахарные присыпки</p>
-          <p><input type="checkbox">фрукты</p>
-          <p><input type="checkbox">сиропы</p>
-          <p><input type="checkbox">джемы</p>
+          <ul>
+            <li><p><input type="checkbox">шоколадные</p></li>
+            <li><p><input type="checkbox">сахарные присыпки</p></li>
+            <li><p><input type="checkbox">фрукты</p></li>
+            <li><p><input type="checkbox">сиропы</p></li>
+            <li><p><input type="checkbox">джемы</p></li>
+          </ul>
+        </div>
+        <div>
           <button type="submit">Применить</button>
         </div>
       </form>
