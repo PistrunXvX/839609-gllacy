@@ -5,7 +5,7 @@
 	<title>"Глейси" каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min.style.css">
 </head>
 <body class="catalog-bg">
 <div class="container">
@@ -78,18 +78,21 @@
           <ul>
             <li>
                <button><span class="visibility-hidden">Удалить товар</span></button>
-                <span class="text">Пломбир с апельсиновым джемом</span>1,5 кг х <span class="sale">200 руб.</span>
+                <span class="text">Пломбир с апельсиновым джемом</span><span class="kg">1,5 кг х</span><span class="sale">200 руб.</span><span class="total-sale">300 руб.</span>
             </li>
             <li>
               <button><span class="visibility-hidden">Удалить товар</span></button>
               <span class="text">Клубничный пломбир с присыпкой
-              из белого шоколада</span><span class="kg">1,5 кг х</span> <span class="sale">300 руб.</span>
+              из белого шоколада</span><span class="kg">1,5 кг х</span> <span class="sale">300 руб.</span><span class="total-sale">450 руб.</span>
             </li>
-          </ul>
-          <span class="total">
+            <li> <span class="total">
             Итого: 750 руб.
-          </span>
-          <a href="#">Оформить заказ</a>
+            </span>
+            </li>
+            <li> <a href="#">Оформить заказ</a></li>
+          </ul>
+
+
         </div>
       </li>
     </ul>
@@ -114,8 +117,8 @@
     <div class="form-basket">
       <form>
         <div class="form-basket-wrapper -w1">
-          <p><label for="form-sort">Сортировка</label></p>
-          <select id="form-sort">
+          <p><label for="form-sort">Сортировка:</label></p>
+          <select id="form-sort" class="select">
             <option value="">по популярности</option>
             <option value="">сначала недорогие</option>
             <option value="">сначала дорогие</option>
@@ -124,7 +127,9 @@
         </div>
         <div class="form-basket-wrapper -w2">
           <p><label for="range-basket">Цена: 100 руб. – 500 руб.</label></p>
-          <input type="range" id="range-basket">
+          <div class="color-back">
+            <input type="range" id="range-basket">
+          </div>
         </div>
         <div class="form-basket-wrapper -w3">
           <p><label>Жирность:</label></p>
@@ -145,8 +150,8 @@
             <li><p><input type="checkbox">джемы</p></li>
           </ul>
         </div>
-        <div>
-          <button type="submit">Применить</button>
+        <div class="btn-nn">
+          <button type="submit" class="btn-form-basket">Применить</button>
         </div>
       </form>
     </div>

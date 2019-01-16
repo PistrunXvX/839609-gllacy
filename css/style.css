@@ -1191,6 +1191,7 @@ footer {
 
 .catalog-list li:hover {
   background-color: rgba(248, 247, 244, 0.2);
+  box-shadow:  0px 0px 20px grey;
 }
 
 .under-item-btn:hover .under-item-wrapper {
@@ -1291,25 +1292,173 @@ footer {
 /* form catalog */
 
 .form-basket {
-  width: 800px;
+  width: 900px;
+}
+
+.form-basket p {
+  text-align: left;
+  padding-left: 20px;
 }
 
 .form-basket form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .form-basket-wrapper {
-  background-color: #AABAB0;
   border-radius: 20px;
 
   width: 200px;
 
   text-align: center;
+
+  padding-right: 15px;
 }
 
+.-w1 select {
+  background-color: #AABAB0;
+  padding: 10px;
+  border-radius: 20px;
 
+  color: white;
+}
+
+.-w1 option {
+  color: black;
+  background-color: white;
+}
+
+.-w2 {
+  width: 220px;
+}
+
+.-w2  input {
+  width: 200px;
+}
+
+.-w2 .color-back {
+  background-color: #AABAB0;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.-w3 {
+  width: 415px;
+}
+
+.-w3 li,
+.-w4 li {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+}
+
+.-w3 ul,
+.-w4 ul {
+  background-color: #AABAB0;
+  border-radius: 20px;
+
+  margin: 0;
+  padding: 0;
+
+}
+
+.-w3 ul p,
+.-w4 ul p {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 14px;
+}
+
+.-w3 input[radio] {
+  padding: 5px;
+}
+
+.-w4 {
+  width: 703px;
+}
+
+.btn-form-basket{
+  width: 144px;
+  padding: 12px 30px;
+
+  border-width: 2px;
+  border-color: white;
+  border-radius: 20px;
+
+  background-color: #AABAB0;
+
+  color: white;
+
+  cursor: pointer;
+
+
+}
+
+.btn-nn{
+  align-self: flex-end;
+}
+
+.form-basket {
+   font-family: "Roboto", Arial, sans-serif;
+   font-size: 16px;
+   font-weight: normal;
+   line-height: 22px;
+   color: #fff;
+ }
+
+/*pop-up*/
+
+.pop-up.basket {
+  display: none;
+
+  width: 540px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+
+  position: absolute;
+  z-index: 2;
+  right: 0%;
+
+  margin-top: 10px;
+  }
+
+  .pop-up.basket li {
+  }
+
+  .pop-up.basket ul{
+    margin: 0;
+    padding: 0;
+    margin: 20px 34px 0 16px;
+
+  }
+
+  .pop-up.basket span {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+
+    color: black;
+  }
+
+  .pop-up.basket ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pop-up.basket p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .pop-up.basket .sale {
+  }
 
 
 
