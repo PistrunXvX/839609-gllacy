@@ -533,7 +533,7 @@ nav a{
 /* catalog */
 
 .catalog a {
-  font-weight: medium;
+  font-weight: normal;
   color: #fff;
 }
 
@@ -666,7 +666,7 @@ nav a{
 }
 
 .new-blog {
-  font-weight: medium;
+  font-weight: normal;
 
   padding-left: 25px;
   padding-top: 25px;
@@ -1303,7 +1303,7 @@ footer {
 .form-basket-wrapper {
   background-color: #AABAB0;
   border-radius: 20px;
-  
+
   width: 200px;
 
   text-align: center;
