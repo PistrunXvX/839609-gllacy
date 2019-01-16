@@ -5,7 +5,7 @@
 	<title>"Глейси" каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/min.style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="catalog-bg">
 <div class="container">
@@ -51,7 +51,6 @@
           </g>
         </svg>
         <span >Вход</span></a>
-
         <div class="pop-up enter pop-up-enter-js">
           <h2 class="visibility-hidden">Войти в профиль или зарегистрироваться</h2>
           <form action="#" method="post">
@@ -64,7 +63,6 @@
             </ul>
           </form>
         </div>
-
       </li>
 		  <li><a href="#" class="btn-basket current">
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
@@ -77,22 +75,21 @@
         <div class="pop-up basket">
           <ul>
             <li>
+              <img src="img/catalog/basket-1.png" alt="Мороженное" width="33" height="33">
                <button><span class="visibility-hidden">Удалить товар</span></button>
                 <span class="text">Пломбир с апельсиновым джемом</span><span class="kg">1,5 кг х</span><span class="sale">200 руб.</span><span class="total-sale">300 руб.</span>
             </li>
             <li>
+              <img src="img/catalog/basket-2.png" alt="Мороженное" width="33" height="33">
               <button><span class="visibility-hidden">Удалить товар</span></button>
               <span class="text">Клубничный пломбир с присыпкой
               из белого шоколада</span><span class="kg">1,5 кг х</span> <span class="sale">300 руб.</span><span class="total-sale">450 руб.</span>
             </li>
-            <li> <span class="total">
-            Итого: 750 руб.
-            </span>
-            </li>
-            <li> <a href="#">Оформить заказ</a></li>
           </ul>
-
-
+             <span class="total">
+               Итого: 750 руб.
+            </span>
+          <a href="#">Оформить заказ</a>
         </div>
       </li>
     </ul>
@@ -115,7 +112,7 @@
 		</nav>
 		<!-- Добавить форму поиска --->
     <div class="form-basket">
-      <form>
+      <form action="https://echo.htmlacademy.ru/">
         <div class="form-basket-wrapper -w1">
           <p><label for="form-sort">Сортировка:</label></p>
           <select id="form-sort" class="select">
@@ -134,20 +131,20 @@
         <div class="form-basket-wrapper -w3">
           <p><label>Жирность:</label></p>
           <ul>
-            <li><p><input type="radio">0%</p></li>
-            <li><p><input type="radio">до 10%</p></li>
-            <li><p><input type="radio">до 30%</p></li>
-            <li><p><input type="radio">выше 30%</p></li>
+            <li><p><input type="radio" name="choose" value="1-1" checked>0%</p></li>
+            <li><p><input type="radio" name="choose" value="2-1">до 10%</p></li>
+            <li><p><input type="radio" name="choose" value="3-1">до 30%</p></li>
+            <li><p><input type="radio" name="choose" value="4-1">выше 30%</p></li>
           </ul>
         </div>
         <div class="form-basket-wrapper -w4">
           <p><label>Наполнители:</label></p>
           <ul>
-            <li><p><input type="checkbox">шоколадные</p></li>
-            <li><p><input type="checkbox">сахарные присыпки</p></li>
-            <li><p><input type="checkbox">фрукты</p></li>
-            <li><p><input type="checkbox">сиропы</p></li>
-            <li><p><input type="checkbox">джемы</p></li>
+            <li><p><input type="checkbox" name="chocolate" value="1-2">шоколадные</p></li>
+            <li><p><input type="checkbox" name="sugar" value="2-2">сахарные присыпки</p></li>
+            <li><p><input type="checkbox" name="fruits" value="3-2">фрукты</p></li>
+            <li><p><input type="checkbox" name="syrup" value="4-2">сиропы</p></li>
+            <li><p><input type="checkbox" name="jam" value="5-2">джемы</p></li>
           </ul>
         </div>
         <div class="btn-nn">
@@ -155,8 +152,6 @@
         </div>
       </form>
     </div>
-
-
 		<section class="catalog">
 			<h2 class="visibility-hidden">Каталог</h2>
 			<ul class="catalog-list">
@@ -284,13 +279,35 @@
 		</section>
 		<section class="second-navigation">
       <div class="wrapper">
-			<ul class="second-list">
-        <li><a class="current-item-second">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-			</ul>
+        <ul class="second-list">
+          <li>
+            <svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+              <title>icon-right-small</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+                <g id="Catalog" transform="translate(-982.000000, -1493.000000)" fill="#C1C6CE" fill-rule="nonzero">
+                  <g id="Пагинатор" transform="translate(982.000000, 1485.000000)">
+                    <g id="icon-right-small" transform="translate(4.000000, 14.000000) rotate(-180.000000) translate(-4.000000, -14.000000) translate(0.000000, 7.000000)">
+                      <path d="M7.237,6.642 L1.729,1.133 C1.53128206,0.93528206 1.21071794,0.93528206 1.013,1.133 C0.81528206,1.33071794 0.81528206,1.65128206 1.013,1.849 L6.163,7 L1.012,12.15 C0.826482288,12.349731 0.832102872,12.6604048 1.02472372,12.8532947 C1.21734457,13.0461846 1.52801027,13.0522388 1.728,12.867 L7.237,7.358 C7.3325122,7.26335321 7.38624375,7.1344641 7.38624375,7 C7.38624375,6.8655359 7.3325122,6.73664679 7.237,6.642 Z" id="Shape"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li><a class="current-item-second">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" class="icon-right">
+              <path fill="#FFF" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/>
+            </svg>
+          </li>
+			  </ul>
       </div>
 		</section>
 	</main>
@@ -343,8 +360,6 @@
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
-
-
     </section>
     <section class="second-info">
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/index/logo-htmlacademy-small.svg" alt="HTML Academy" width="110" height="39"></a>
