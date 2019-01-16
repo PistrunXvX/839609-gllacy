@@ -1294,7 +1294,7 @@ footer {
   width: 800px;
 }
 
-form {
+.form-basket form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
